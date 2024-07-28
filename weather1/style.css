@@ -1,0 +1,168 @@
+/* General styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Title styling */
+.title-for-Website {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Closing statement styling */
+.closing-Statement {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container styling */
+.container {
+    width: 400px;
+    padding: 28px 32px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: height 0.6s ease-out;
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 18px;
+    background: #f0f0f0;
+    color: #333;
+}
+
+.search-box button {
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #555;
+}
+
+/* Loading animation styling */
+.loading {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loading img {
+    width: 50px;
+}
+
+/* Weather box styling */
+.weather-box,
+.weather-details,
+.not-found {
+    display: none;
+    text-align: center;
+}
+
+.weather-box img {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.weather-box .temperature {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.weather-box .description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Weather details styling */
+.weather-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.weather-details>div {
+    width: 48%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.weather-details .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-details i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.weather-details .humidity-value,
+.weather-details .wind-value,
+.weather-details .feels-like-value,
+.weather-details .pressure-value,
+.weather-details .visibility-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Not found styling */
+.not-found img {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.not-found p {
+    font-size: 1.2rem;
+}
+
+/* Fade in animation */
+.fadeIn {
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
